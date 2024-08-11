@@ -1,13 +1,176 @@
 const links = document.querySelectorAll('.poem');
 
 let poems = {
-    'The provider who provides': 'In the dark hallway of life\nShines a ray of light\nto dark, the shine arises\nby the \'provider who provides\'\n\nWhen you find the provider\nno sorrow leaves a trace\nproblems, all of them vanish\nit all gives life an embrace\n\nBut comes a time for him too\nwhen tides take a turn\nif destiny is to be followed\nall man made tracks disappear\n\nEven the provider who provides\nSometimes too, wanders into a dark hallway\nfrom which he can\'t escape\nfrom where, escape has no way\n\nAnd that, provider who provides\nwhen is in the dark himself\nthere exists no entity\nwho will provide the same ray of life...\n',
+    'The provider who provides': `
+    In the dark hallway of life
+Shines a ray of light
+to dark, the shine arises
+by the 'provider who provides'
 
-    'A Bankrupt Billionaire' : 'A man can\'t be sunken\nwho\'s already at the bottom of the ocean\nhe can\'t fix any ships\nwho himself is in one broken\n\nhe\'s filled with knowledge and wit\nperhaps someone who\'s really rare\ndespite whatever he has done\nhe\'s still the bankrupt billionaire\n\nhe knows every game of life\nhow it turns joy into sorrow\nhow fate meets someone today\nwhat legacy does to him tomorrow\n\nhe went out to solve the issues\nto fix all the pain\nhe could\'ve done it, he sweared\nif he weren\'t a bankrupt billionaire\n\nno matter how hard he\'d try\nlife was always against him\neven if he\'d die trying\nhis own self wouldn\'t support him\n\nHe may be full of wisdom\nbut he\'s living in his own fear\nso, who was he to help people?\nfor himself, he was a bankrupt billionaire.\n',
+When you find the provider
+no sorrow leaves a trace
+problems, all vanish
+it all gives life an embrace
 
-    'I\'ve lost \'me\'': 'Life of mine is broken down\nlike broken twigs of a tree\nI don\'t have any ties that are healthy\nBecause I\'ve lost me.\n\nThe wires of my heart\nconnect in search of electricity\nof love and hope and light and care\nbut it forms circuits of pity\n\nTo all my friends I talk to\nsay I\'ve vented and ranted\nI needed someone to fill my gap\nbut made me feel unwanted\n\nTrust of mine was broken\nby someone who I haven\'t known\nI don\'t have any hope in myself\nor in a friend or a foe\n\nI don\'t know what will happen today or tomorrow\nbecause of what happened yesterday\nthe only thing I wanted was love\nsomeone who cared about me everyday\n\nI wish something would fix this\nget me back on the track that\'s right\nI\'ve wanted a real connection\none that would show me a ray of light\n\nI\'ve lost my only companion\nwho was lovely and was free\nI don\'t have any ties that are healthy\nBecause I\'ve lost \'me\'.',
+But comes a time for him too
+when tides take a turn
+if destiny, it is to be
+all man made tracks disappear
 
-    'A star that will always shine': 'Look, I might not know\nhow to get words to rhyme\nyou\'re just like a star in the darkness\nwhich will always shine\n\nyou\'re made of emotions\nstrong and weak, core and crust\nyou can be anyone you want\nall you need to do is trust\n\nlife is not always easy\nit gets dark so much you can\'t see\nstill the true wonders are hiding behind\nand the beauty you don\'t perceive\n\nyou are just like a dark hallway\nwhere darkness all lies\nbut you have the light inside you\nwhich makes the demons cry\n\nyou are a creation of beauty\nupon which I can make a bet\nyour reflection shows sparkle\nof joy and hope, you mustn\'t forget\n\nI may be dumb enough\nthat I forget sometimes to rhyme\nbut you\'re a star in the darkness\nwhich will always shine.\'',
+Even the provider who provides
+Sometimes too, wanders into a dark hallway
+from which he can't escape
+from where, escape has no way
+
+And that, provider who provides
+when is in the dark himself
+there exists no entity
+who will provide the same ray of life...
+`,
+
+    'A Bankrupt Billionaire' : `
+    A man can't be sunken
+who's already at the bottom of the ocean
+he can't fix any ships
+who himself is in one broken
+
+he's filled with knowledge and wit
+perhaps, he's someone who's really rare
+despite whatever he has done
+he's still the bankrupt billionaire
+
+he knows the game of life
+how joy turns to sorrow
+how legacy meets one today
+what fate does to him tomorrow
+
+he went out to solve the issues
+to fix all the pain
+he could've done it, he swore
+if he weren't a bankrupt billionaire
+
+no matter how hard he tried
+life was always against him
+even if he'd die trying
+his own self wouldn't support him
+
+He may be full of wisdom
+but he's living in his own fear
+so, who was he to help people?
+for himself, he was a bankrupt billionaire.
+`,
+
+'A star that will always shine': `
+Look, I might not know
+how to get words to rhyme
+but you're just like a star in the darkness
+that will always shine
+
+you're made of many emotions
+strong and weak, through your core and crust
+you can be who you want
+all you need really is trust
+
+life, is not a piece of cake
+it gets dark, so much that you can't see
+though the true wonders are hiding behind
+the beauty you don't perceive
+
+you are just like this dark hallway
+where darkness although lies
+but you have the light in you
+which makes the demons cry
+
+you are the creation, beauty
+upon which I can make a bet
+of that your reflection shows a sparkle
+of joy and hope, you mustn't forget
+
+I still may not be able to write and ill
+forget sometimes how to rhyme
+but what I know with a certainty is that
+you're a star that always shines.
+`,
+'An Uncommon Textbook': `
+Travelling through the crowded aisle
+Something I saw that made me shook
+It made me want to learn how to
+open this certain closed book
+
+This book is not the one you've seen
+with its pages, crusty and aged
+It's scent, pulls and devours you
+with all the bliss it has encaged
+
+I know not what the book looks like
+nor do I know what's the stuff inside
+but what I am certain of
+is that it knows what's all the right
+for it knows how to mend it's ways
+and packs knowledge, deep inside like a full moon night
+
+Once you start to flip the pages
+you'll feel as if you're hooked in
+your hands will move but heart still & stopped
+that's the charm it has within
+
+Going through its columns inside
+you'll keep falling for the depth
+of what all lies inside and it
+does infact hold a lot of strength
+
+Now congratulate yourself, poor soul
+you've opened its cover page
+is what you have been thinking still
+being stuck in thoughts the book engaged 
+
+But worry not, be a thinker twice
+to know how to love it enough to move inside
+of its realm, that it shall possess you in
+once you win all its noble fights
+
+It is what I call beauty
+but certainly scary at times
+how beautiful it makes all seem
+how perfectly it rhymes
+
+And now that the cover has opened by
+revealing what is inside
+it is no ordinary to witness
+all the matter that there lies
+
+Zoning back into to the aisle
+I still hold this certain book
+too powerful it is, I let it down
+and through my journey I continue to look
+
+I'm sure someone will have the same of mind
+as I had looking at it
+someone surely will fall again
+and someone will never quit
+`,
+'A Calm Carnivore':`
+I looked out of the window pane
+to see a perching eagle.
+he stood - not too high above the ariel haven
+with a calming flock.
+
+He looked down at the waving trees
+and up to see another flock.
+He wasn't on a hunt for one
+a day it must've took off
+
+He wasn't of a fighter kind
+who's searching for a meal
+the only sight beyond its eyes
+were looking, just for peace
+
+I looked at it a second time
+he turned around at me
+we held a sight, then it vanished
+he just wanted to be free
+`
+
 }
 
 links.forEach(link => {
