@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(72, 138, 143, 0.75)), url(kalam.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    padding: 0 20px; /* Added padding for better readability on small screens */
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 0; /* Removed top margin for better alignment on smaller screens */
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 1.5; /* Adjusted line-height for better readability */
+    font-size: 18px; /* Adjusted font-size for better readability */
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        top: 40%; /* Adjusted top position for smaller screens */
+        transform: translateY(-40%); /* Adjusted transform for smaller screens */
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .content h1 {
+        font-size: 36px; /* Reduced font-size for smaller screens */
+        margin-top: 20px; /* Adjusted margin-top for smaller screens */
+    }
+
+    .content p {
+        margin: 10px auto;
+        font-size: 16px; /* Reduced font-size for smaller screens */
+    }
+}
