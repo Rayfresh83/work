@@ -16,7 +16,7 @@ links.forEach(link => {
         const poemId = event.target.id;
         const poemTitle = document.getElementById(poemId).innerHTML;
         const poemText = poems[poemTitle].replace(/\n/g, '<br>');
-        window.open('D:\\HTMLS\\work\\htmls\\poem_display.html','_self');
+        window.open('poem_display.html','_self');
         localStorage.setItem('poemData', poemText);
         localStorage.setItem('poemName', poemTitle);
         console.log(poemText, poemTitle);
