@@ -75,7 +75,7 @@
     }
 
     .out {
-        margin: 20px 10px; /* Adjust margin for mobile screens */
+        margin: 50px 10px; /* Adjust margin for mobile screens */
         width: 100%; /* Make width responsive */
         max-width: none; /* Remove max-width on smaller screens */
     }

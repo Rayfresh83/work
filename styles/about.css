@@ -90,6 +90,7 @@
     height: 30px;
     width: 40px;
     align-items: center;
+    margin-top: 100px;
 }
 
 /* Media queries for mobile devices */
@@ -128,5 +129,8 @@
 
     .logos {
         margin-top: 20px; /* Adjust margin for mobile screens */
+    }
+    .disk{
+        margin-top: 20px;
     }
 }
