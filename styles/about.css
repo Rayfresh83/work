@@ -7,8 +7,8 @@
 
 html, body {
     width: 100%;
-    height: 100%; /* Ensure body takes full height */
-    overflow-x: hidden;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .banner {
@@ -17,26 +17,27 @@ html, body {
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(72, 138, 143, 0.75)), url(kalam.jpg);
     background-size: cover;
     background-position: center;
-    position: relative; /* Allow child elements to position absolutely */
+    position: relative; /* Ensure child elements can be positioned absolutely */
+    overflow: hidden; /* Prevent any child overflow */
 }
 
 .navbar {
-    width: 85%;
+    width: 100%; /* Ensure navbar takes the full width */
     margin: auto;
     padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navbar ul {
     display: flex;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .navbar ul li {
-    list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
@@ -66,6 +67,7 @@ html, body {
 
 .content {
     width: 100%;
+    max-width: 100%; /* Prevent content from exceeding the screen width */
     position: absolute;
     top: 30%;
     transform: translateY(-30%);
@@ -88,7 +90,7 @@ html, body {
 
 .logos {
     position: absolute;
-    bottom: 0; /* Stick to the bottom of the page */
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
