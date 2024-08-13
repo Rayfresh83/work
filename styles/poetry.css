@@ -1,3 +1,4 @@
+/* General styles */
 *{
     margin: 0;
     padding: 0;
@@ -12,27 +13,30 @@
     background-position: center;
 }
 
-
 .navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+    width: 100%; /* Change to 100% to occupy the full width */
+    padding: 20px 0; /* Reduce padding for mobile */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align items to the left */
 }
-.navbar ul li{
+
+.navbar ul {
     list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
+    padding: 0;
+    margin: 0;
 }
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
 .navbar ul li a{
     text-decoration: none;
     color: white;
-    text-transform: uppercase
-    ;
+    text-transform: uppercase;
 }
+
 .navbar ul li::after{
     content: '';
     height: 3px;
@@ -43,24 +47,24 @@
     bottom: -6px;
     transition: 0.5s;
 }
+
 .navbar ul li:hover::after{
     width: 100%;
 }
+
 .content {
     width: 100%;
     position: absolute;
-    top: 40%;
+    top: 25%; /* Adjusted from 40% to 25% */
     transform: translateY(-50%);
     text-align: left;
     color: white;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
+
 h1{
     font-size: 60px;
-    margin-left: 100px;
+    margin-left: 20px; /* Reduced left margin */
+    margin-top: 20px; /* Added top margin */
 }
 
 .poems{
@@ -70,43 +74,38 @@ h1{
 }
 
 .poem{
-    /* top left right down*/
-    margin:15px 100px;
+    margin: 15px 100px;
 }
+
+/* Responsive styles */
 @media only screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
+        flex-direction: row; /* Keep row direction */
+        justify-content: flex-start; /* Align to the left */
     }
 
     .navbar ul li {
-        margin: 10px 0;
+        margin: 0 10px; /* Reduce margin */
     }
 
     .content {
-        top: 20%; /* Adjust top position for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-        text-align: center; /* Center text on smaller screens */
+        top: 20%; /* Adjust top position */
+        padding: 10px;
+        text-align: center;
     }
 
     h1 {
-        font-size: 36px; /* Reduce font size for smaller screens */
-        margin-left: 0; /* Remove left margin on smaller screens */
+        font-size: 36px;
+        margin-left: 0; /* No left margin */
+        margin-top: 10px; /* Adjust top margin */
     }
 
     .poems {
-        margin: 30px auto; /* Adjust margin for mobile screens */
-        width: 90%; /* Make width responsive */
+        margin: 30px auto;
+        width: 90%;
     }
 
     .poem {
-        margin: 15px 0; /* Adjust margin for mobile screens */
+        margin: 15px 0;
     }
 }
