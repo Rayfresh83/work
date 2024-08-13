@@ -22,12 +22,12 @@ html, body {
 }
 
 .navbar {
-    width: 100%; /* Ensure navbar takes the full width */
+    width: 85%;
     margin: auto;
     padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Align items to the left and right */
 }
 
 .navbar ul {
@@ -38,6 +38,7 @@ html, body {
 }
 
 .navbar ul li {
+    list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
@@ -111,7 +112,7 @@ html, body {
         flex-direction: row;
         align-items: center;
         width: 100%;
-        justify-content: center;
+        justify-content: flex-start; /* Align items to the left */
     }
 
     .navbar ul {
