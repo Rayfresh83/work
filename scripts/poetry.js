@@ -1,7 +1,7 @@
 const links = document.querySelectorAll('.poem');
 
 let poems = {
-    'The provider who provides': `
+    'The Provider who Provides': `
     In the dark hallway of life
 Shines a ray of light
 to dark, the shine arises
@@ -60,7 +60,7 @@ so, who was he to help people?
 for himself, he was a bankrupt billionaire.
 `,
 
-'A star that will always shine': `
+'A Shining Star': `
 Look, I might not know
 how to get words to rhyme
 but you're just like a star in the darkness
