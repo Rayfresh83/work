@@ -1,7 +1,14 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .banner {
@@ -38,6 +45,7 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    font-size: 16px; /* Default font size */
 }
 
 .navbar ul li::after {
@@ -62,52 +70,75 @@
     transform: translateY(-50%);
     text-align: center;
     color: white;
-    padding: 0 20px; /* Added padding for better readability on small screens */
+    padding: 0 20px;
 }
 
 .content h1 {
     font-size: 70px;
-    margin-top: 0; /* Removed top margin for better alignment on smaller screens */
+    margin-top: 0;
 }
 
 .content p {
     margin: 20px auto;
     font-weight: 100;
-    line-height: 1.5; /* Adjusted line-height for better readability */
-    font-size: 18px; /* Adjusted font-size for better readability */
+    line-height: 1.5;
+    font-size: 18px; /* Default font size */
 }
 
 /* Media queries for mobile devices */
 @media only screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         width: 100%;
     }
 
     .navbar ul {
-        flex-direction: column;
+        flex-direction: row;
         padding: 0;
         margin: 0;
+        justify-content: center;
     }
 
     .navbar ul li {
-        margin: 10px 0;
+        margin: 10px 10px;
     }
 
     .content {
-        top: 40%; /* Adjusted top position for smaller screens */
-        transform: translateY(-40%); /* Adjusted transform for smaller screens */
-        padding: 10px; /* Adjusted padding for smaller screens */
+        top: 40%;
+        padding: 10px;
     }
 
     .content h1 {
-        font-size: 36px; /* Reduced font-size for smaller screens */
-        margin-top: 20px; /* Adjusted margin-top for smaller screens */
+        font-size: 36px;
+        margin-top: 20px;
     }
 
     .content p {
         margin: 10px auto;
-        font-size: 16px; /* Reduced font-size for smaller screens */
+        font-size: 16px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(72, 138, 143, 0.75)), url(kalam.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Media query for high-resolution screens (e.g., 1080x2400) */
+@media only screen and (min-width: 1080px) and (max-height: 2400px) {
+    .navbar ul li a {
+        font-size: 30px; /* Increase navbar font size */
+    }
+
+    .content p {
+        font-size: 30px; /* Increase paragraph font size */
+    }
+
+    .content h1 {
+        font-size: 80px; /* Increase heading size */
     }
 }
