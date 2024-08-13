@@ -14,11 +14,12 @@
 }
 
 .navbar{
-    width: 100%; /* Change to 100% to occupy the full width */
-    padding: 20px 0; /* Reduce padding for mobile */
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: space-between;
 }
 
 .navbar ul {
@@ -28,7 +29,9 @@
 }
 
 .navbar ul li {
+    display: inline-block;
     margin: 0 20px;
+    position: relative;
 }
 
 .navbar ul li a{
@@ -55,7 +58,7 @@
 .content {
     width: 100%;
     position: absolute;
-    top: 25%; /* Adjusted from 40% to 25% */
+    top: 40%;
     transform: translateY(-50%);
     text-align: left;
     color: white;
@@ -63,8 +66,7 @@
 
 h1{
     font-size: 60px;
-    margin-left: 20px; /* Reduced left margin */
-    margin-top: 20px; /* Added top margin */
+    margin-left: 100px;
 }
 
 .poems{
@@ -77,35 +79,42 @@ h1{
     margin: 15px 100px;
 }
 
-/* Responsive styles */
+/* Responsive styles for mobile */
 @media only screen and (max-width: 768px) {
     .navbar {
-        flex-direction: row; /* Keep row direction */
-        justify-content: flex-start; /* Align to the left */
+        width: 100%; /* Full width for navbar on mobile */
+        padding: 20px 10px; /* Adjust padding */
+        justify-content: flex-start; /* Align items to the left */
+    }
+
+    .navbar ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start; /* Align items to the left */
     }
 
     .navbar ul li {
-        margin: 0 10px; /* Reduce margin */
+        margin: 0 10px; /* Reduce margin on mobile */
     }
 
     .content {
-        top: 20%; /* Adjust top position */
+        top: 30%; /* Adjust top position for mobile */
         padding: 10px;
-        text-align: center;
+        text-align: center; /* Center text on mobile */
     }
 
     h1 {
-        font-size: 36px;
-        margin-left: 0; /* No left margin */
-        margin-top: 10px; /* Adjust top margin */
+        font-size: 36px; /* Reduce font size for mobile */
+        margin-left: 10px; /* Reduce left margin on mobile */
+        margin-top: 10px; /* Add top margin */
     }
 
     .poems {
-        margin: 30px auto;
-        width: 90%;
+        margin: 30px auto; /* Center poems on mobile */
+        width: 90%; /* Adjust width */
     }
 
     .poem {
-        margin: 15px 0;
+        margin: 15px 0; /* Adjust margin on mobile */
     }
 }
