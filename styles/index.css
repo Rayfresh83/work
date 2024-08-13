@@ -86,7 +86,7 @@ html, body {
 }
 
 /* Media queries for mobile devices */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
     .navbar {
         flex-direction: row;
         align-items: center;
@@ -107,7 +107,7 @@ html, body {
         text-decoration: none;
         color: white;
         text-transform: uppercase;
-        font-size:40px;
+        font-size: 30px;
     }
 
     .content {
