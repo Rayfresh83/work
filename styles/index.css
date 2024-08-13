@@ -129,7 +129,7 @@ html, body {
 }
 
 /* Media query for high-resolution screens (e.g., 1080x2400) */
-@media only screen and (min-width: 1080px) and (max-height: 2400px) {
+@media only screen and (max-width: 1080px) and (max-height: 2400px) {
     .navbar ul li a {
         font-size: 30px; /* Increase navbar font size */
     }
