@@ -169,6 +169,53 @@ I looked at it a second time
 he turned around at me
 we held a sight, then it vanished
 he just wanted to be free
+`,
+'Re-routed': `
+Riding a car
+On a massive highway
+Will it be fast
+On maybe the right way?
+
+I see nothing in front of me
+Back, maybe right of me
+Are just cars, traffic
+God help, need it helplessly
+
+The same boring road
+Just bore me way more
+There’s no beauty to see
+But Just dust, floating endlessly
+
+A direction missed; I look to the left of me
+To see another road
+As shallow as it looked
+The more it was free
+
+Did not think twice
+I jumped in with my car
+on the bumps of that road
+Making just for some turbulency
+
+As the trees kept waving
+And farewell’d me
+I looked back, and saw
+No cars and no hypocrisy 
+
+
+I know not why but I
+Feel a bit uneasy
+Having to race all the cars
+And not gliding freely
+
+Cause’ all of the hype of this
+Road is quite newbie
+For all of this boring concrete
+Rests on natures gullies
+
+Oh! What a relief, I start the car finally
+Only to get stuck in traffic again
+I thought of the other road subliminally 
+And hours did pass till I passed eventually.
 `
 
 }
