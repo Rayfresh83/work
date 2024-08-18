@@ -10,6 +10,12 @@ const bgs = {
     "A Calm Carnivore": "url('../images/poetry-specific-bgs/A Calm Carnivore.jpg')",
     "Re-routed": "url('../images/poetry-specific-bgs/Re-routed.jpg')",
 }
+Object.values(bgs).forEach((bgUrl) => {
+    const url = bgUrl.slice(4, -1).replace(/['"]/g, "");
+    const img = new Image();
+    img.src = url;
+
+});
 
 // Check if data exists
 if (data) {
