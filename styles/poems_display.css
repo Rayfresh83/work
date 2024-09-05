@@ -1,24 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Added for consistent box sizing */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
+body {
     background-color: black;
+    overflow-x: hidden;
 }
 
-.container{
+.container {
     width: 100%;
-    height: 105vh;
+    min-height: 100vh; 
     background-size: cover;
     background-position: center;
-    color: white;
     background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column; 
 }
 
-
-.navbar{
+.navbar {
     width: 85%;
     margin: auto;
     padding: 35px 0;
@@ -26,19 +29,21 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     color: white;
-    text-transform: uppercase
-    ;
+    text-transform: uppercase;
 }
-.navbar ul li::after{
+
+.navbar ul li::after {
     content: '';
     height: 3px;
     width: 0;
@@ -46,47 +51,36 @@ body{
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.5s;
+    transition: width 0.5s;
 }
-.navbar ul li:hover::after{
+
+.navbar ul li:hover::after {
     width: 100%;
 }
-.out{
-    margin-left: 550px;
-    margin-top: 20px;
-    height:600px;
-    width: 700px;
-    overflow: auto;
-    padding: 0px;
-  
 
+.out {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    overflow: auto;
+    padding: 0;
 }
-p{
+
+p {
     font-size: 15px;
-    text-shadow: 
-    1px 1px 2px black,
-    0 0 0.2em black;
+    text-shadow: 1px 1px 2px black, 0 0 0.2em black;
 }
+
 @media only screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
         width: 100%;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
+        height: auto;
     }
 
     .out {
-        margin: 50px 10px; /* Adjust margin for mobile screens */
-        width: 100%; /* Make width responsive */
-        max-width: none; /* Remove max-width on smaller screens */
+        margin: 50px 10px;
+        text-align: center;
     }
 }

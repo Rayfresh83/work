@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staircase</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="../styles/projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Projects</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="left">
-            <h1>About</h1>
-            <p>Know the creators</p>
-
+        <div class="navbar">
+            <ul>
+                <li><a href="../index.html">Back</a></li>
+            </ul>
         </div>
 
-        <div class="right">
-            <h1>Projects</h1>
-            <p>Check out the individual works</p>
+        <div class="content">
+
+            <div class="left">
+                <h1>Poems</h1>
+                <p>By Rayan</p>
+            </div>
+
+            <div class="right">
+                <h1>Apps</h1>
+                <p>By Abaan</p>
+            </div>
 
         </div>
+        
     </div>
 
     <script>
         document.getElementsByClassName('left')[0].addEventListener('click', () => {
-            window.location.href = '../Website/htmls/about.html';
-        });
-
-        document.getElementsByClassName('right')[0].addEventListener('click', () => {
-            window.location.href = '../Website/htmls/projects.html';
+            window.location.href = '../htmls/poetry.html';
         });
     </script>
 </body>
+
 </html>

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rock Salt', cursive;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: url(../images/projectas.jpg) center/cover;
+    transition: all 1.3s ease-in-out;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 5%);
+    display: flex;
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: flex 1.3s ease, background-color 1.3s ease;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.left p, .left h1 {
+    margin-left: 20px;
+}
+
+.right p, .right h1 {
+    margin-right: 20px;
+}
+
+.left:hover, .right:hover {
+    flex: 3;
+    background-color: rgba(210, 210, 210, 0.6);
+    backdrop-filter: blur(3px);
+    align-items: center;
+}
+
+.left:hover ~ .middle, .left:hover ~ .right,
+.right:hover ~ .left, .right:hover ~ .middle {
+    flex: 1;
+}
+
+@media(max-width:768px){
+    .content {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .navbar{
+        width: 100%;
+        padding: 10px 0;
+        justify-content: center;
+    }
+}

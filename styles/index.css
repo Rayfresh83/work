@@ -1,136 +1,104 @@
-/* General styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Rock Salt', cursive;
+    color: #fff;
 }
 
 html, body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.banner {
-    width: 100%;
+.container {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(72, 138, 143, 0.75)), url(../images/kalam.jpg);
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    display: flex;
+    background: url('../images/kalam.jpg') center/cover;
+    transition: all 1.3s ease-in-out;
 }
 
-.navbar {
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+.left, .right {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: flex 1.3s ease, background-color 1.3s ease;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.left:hover, .right:hover {
+    flex: 3;
+    background-color: rgba(210, 210, 210, 0.6);
+    backdrop-filter: blur(3px);
     align-items: center;
-    justify-content: space-between;
 }
 
-.navbar ul {
-    display: flex;
-    padding: 0;
+.left:hover ~ .middle, .left:hover ~ .right,
+.right:hover ~ .left, .right:hover ~ .middle {
+    flex: 1;
+}
+
+h1, p {
     margin: 0;
+    transition: margin 1.3s ease;
 }
 
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
+h1 {
+    font-size: 40px;
+    color: #2f2f2f;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 16px; /* Default font size */
+p {
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 20px 0 50px;
 }
 
-.navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #009688;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+.left h1, .left p {
+    margin-left: 20px;
 }
 
-.navbar ul li:hover::after {
-    width: 100%;
+.right h1, .right p {
+    margin-right: 20px;
 }
 
-.content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.left:hover h1, .right:hover h1,
+.left:hover p, .right:hover p {
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
-    color: white;
-    padding: 0 20px;
 }
-
-.content h1 {
-    font-size: 70px;
-    margin-top: 0;
-}
-
-.content p {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 1.5;
-    font-size: 20px; /* Default font size */
-}
-
-/* Media queries for mobile devices */
-@media only screen and (max-width: 950px) {
-    .navbar {
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
+ 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
     }
 
-    .navbar ul {
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-        justify-content: center;
+    .left, .right {
+        flex: 1;
     }
 
-    .navbar ul li {
-        margin: 10px 10px;
-    }
-    .navbar ul li a{
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        font-size: 25px;
-    }
-
-    .content {
-        top: 40%;
+    .left, .right {
         padding: 10px;
     }
 
-    .content h1 {
-        font-size: 36px;
-        margin-top: 20px;
+    h1 {
+        font-size: 30px;
     }
 
-    .content p {
-        margin: 10px auto;
-        font-size: 16px;
-    }
-
-    .banner {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(72, 138, 143, 0.75)), url(kalam.jpg);
-        background-size: cover;
-        background-position: center;
+    p {
+        font-size: 15px;
     }
 }

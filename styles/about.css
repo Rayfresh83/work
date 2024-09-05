@@ -2,23 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Rock Salt', cursive;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden;
 }
 
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(72, 138, 143, 0.75)), url(../images/kalam.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative; /* Ensure child elements can be positioned absolutely */
-    overflow: hidden; /* Prevent any child overflow */
+    background: url(../images/about.png) center/cover;
+    position: relative;
+    overflow: hidden;
 }
 
 .navbar {
@@ -26,26 +25,22 @@ html, body {
     margin: auto;
     padding: 35px 0;
     display: flex;
-    justify-content: space-between; /* Align items to the left and right */
+    justify-content: space-between;
 }
 
 .navbar ul {
     display: flex;
-    padding: 0;
-    margin: 0;
     list-style: none;
 }
 
 .navbar ul li {
-    list-style: none;
-    display: inline-block;
     margin: 0 20px;
     position: relative;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: #000;
     text-transform: uppercase;
     font-size: 16px;
 }
@@ -67,87 +62,153 @@ html, body {
 
 .content {
     width: 100%;
-    max-width: 100%; /* Prevent content from exceeding the screen width */
+    max-width: 100%;
     position: absolute;
-    top: 30%;
+    height: 60%;
+    top: 60%;
     transform: translateY(-30%);
-    text-align: center;
-    color: white;
-    padding: 0 20px;
-}
-
-.content h1 {
-    font-size: 80px;
-    margin: 0 auto 20px;
-}
-
-.content p {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 1.5;
-    font-size: 18px;
-}
-
-.logos {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    color: #000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    opacity: 0.4;
-    padding: 20px 0;
-    margin-bottom: 270px;
 }
 
-.disk {
-    height: 30px;
+.left,
+.right {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0));
+}
+
+.left h1,
+.right h1 {
+    font-size: 50px;
+}
+
+.left h2,
+.right h2 {
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+}
+
+.left h1,
+.left h2,
+.left p {
+    margin-left: 5%;
+}
+
+.right h1,
+.right h2 {
+    margin-left: 55%;
+}
+
+.right p {
+    margin-left: 30%;
+    font-size: 21px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.left p {
+    font-size: 21px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+a {
+    color: #fff;
+}
+
+#discord,
+#website,
+#github {
     width: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    opacity: 0.3;
+    vertical-align: middle;
 }
 
-@media only screen and (max-width: 768px) {
+#discord {
+    height: 30px;
+}
+
+#website {
+    height: 35px;
+    border-radius: 50%;
+}
+
+#github {
+    height: 35px;
+    border-radius: 50%;
+}
+
+@media(max-width:768px) {
     .navbar {
-        flex-direction: row;
-        align-items: center;
         width: 100%;
-        justify-content: flex-start; /* Align items to the left */
+        padding: 10px 0;
+        justify-content: center;
     }
 
-    .navbar ul {
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-    }
+    .navbar ul li a {
+        font-size: 14px;
 
-    .navbar ul li {
-        margin: 10px;
     }
 
     .content {
-        top: 20%;
-        transform: translateY(-20%);
-        padding: 10px;
+        flex-direction: column;
+        top: 55%;
+        transform: translateY(-50%);
+        height: auto;
     }
 
-    .content h1 {
-        font-size: 36px;
-        margin: 0 auto 20px;
+    .left,
+    .right {
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
     }
 
-    .content p {
-        margin: 10px auto;
-        font-size: 16px;
+    .left h1,
+    .right h1 {
+        font-size: 40px;
     }
 
-    .logos {
-        padding: 10px 0;
-        margin-bottom: 300px;
+    .left h2,
+    .right h2 {
+        font-size: 24px;
+        top: 0;
     }
 
-    .disk {
+    .left h1,
+    .left h2 {
+        margin-left: 10px;
+    }
+
+    .right h1,
+    .right h2 {
+        margin-left: 10px;
+    }
+
+    .right p,
+    .left p {
+        margin-left: 5px;
+        font-size: 18px;
+    }
+
+    #discord,
+    #website,
+    #github {
+        margin-left: 10px;
+        margin-top: 5px;
+        width: 30px;
+    }
+
+    #discord {
+        height: 20px;
+    }
+
+    #website,
+    #github {
         height: 25px;
-        width: 35px;
     }
 }
