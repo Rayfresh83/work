@@ -58,7 +58,7 @@
 .content {
     width: 100%;
     position: relative;
-    top: 45%;
+    top: 40%;
     height: 85%;
     transform: translateY(-50%);
     text-align: center;
@@ -85,8 +85,8 @@ h1 {
     }
 
     .content {
-        top: 40%;
-        transform: translateY(-40%);
+        top: 30%;
+        transform: translateY(-35%);
     }
 
     h1 {

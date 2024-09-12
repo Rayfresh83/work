@@ -28,7 +28,7 @@ there exists no entity
 who will provide the same ray of life...
 `,
 
-    'A Bankrupt Billionaire' : `
+'A Bankrupt Billionaire' : `
     A man can't be sunken
 who's already at the bottom of the ocean
 he can't fix any ships
@@ -216,6 +216,28 @@ Oh! What a relief, I start the car finally
 Only to get stuck in traffic again
 I thought of the other road subliminally 
 And hours did pass till I passed eventually.
+`,
+'Papa, where is he?': `
+I had learnt to count the hanging stars,
+The biggest one that I could find,
+To the one dazzling over the banyan tree—
+That was the way my father taught me.
+The birds are sitting on the tree,
+They throw their wings and take a leap,
+And fly across the prickly wall
+That Papa had told me not to cross.
+I then go to the empty street
+To see people lying asleep,
+With patches so red and bright,
+Oddly resembling strawberries.
+It's not fun anymore, to run in the fields
+Where Papa used to work.
+I look and search through the grass
+For him, to hug me once again.
+I wonder why Papa left—
+Was he gone to get some treats?
+I want those men to take me too,
+The ones who took my Papa from me.
 `
 
 }

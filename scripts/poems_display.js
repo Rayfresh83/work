@@ -9,6 +9,7 @@ const bgs = {
     "A Shining Star": "url('../images/poetry-specific-bgs/A Shining Star.jpg')",
     "A Calm Carnivore": "url('../images/poetry-specific-bgs/A Calm Carnivore.jpg')",
     "Re-routed": "url('../images/poetry-specific-bgs/Re-routed.jpg')",
+    "Papa, where is he?": "url('../images/poetry-specific-bgs/Papa, where is he?.jpg')",
 }
 Object.values(bgs).forEach((bgUrl) => {
     const url = bgUrl.slice(4, -1).replace(/['"]/g, "");
